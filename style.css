@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: hsl(30, 38%, 92%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	min-width: 375px;
+	max-width: 375px;
+	min-height: 600px;
+	margin: 3rem 2rem;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.card-img {
+	min-width: 375px;
+	min-height: 250px;
+	background-image: url('images/image-product-mobile.jpg');
+	background-size: cover;
+	background-position: 0 0;
+}
+
+.card-inner {
+	padding: 0 3rem;
+}
+
+.card-txt {
+	color: hsl(228, 12%, 48%);
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	letter-spacing: 5px;
+	font-weight: 500;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.card-title {
+	font-size: 3rem;
+	font-family: 'Fraunces', serif;
+	width: 90%;
+	line-height: 3rem;
+	margin-bottom: 2rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-info {
+	font-size: 1.4rem;
+	color: hsl(228, 12%, 48%);
+	line-height: 2.3rem;
+	width: 92%;
+	margin-bottom: 2rem;
+}
+
+.card-prijs {
+	display: flex;
+	align-items: center;
+	color: hsl(158, 36%, 37%);
+	font-size: 3rem;
+	font-family: 'Fraunces', serif;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+
+.card-prijs span {
+	color: hsl(228, 12%, 48%);
+	font-size: 1.4rem;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: line-through;
+	margin-left: 2rem;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(158, 36%, 37%);
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+.btn a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem 3rem;
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+.btn img {
+	margin-right: 1.4rem;
+}
+
+@media (min-width: 1200px) {
+	body {
+		height: 100vh;
+	}
+	.card {
+		flex-direction: row;
+		align-items: space-between;
+		overflow: visible;
+		min-width: 700px;
+		max-width: 700px;
+		min-height: 500px;
+		overflow: hidden;
+	}
+	.card-img {
+		min-width: 350px;
+		height: 500px;
+		background-image: url('images/image-product-desktop.jpg');
+	}
+	.card-inner {
+		padding: 2rem 5rem;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+    .card-txt{
+        margin-bottom: 0;
+    }
+
+    .card-title{
+        margin-bottom: 0;
+        width: 80%;
+    }
+
+    .card-info{
+        margin-bottom: 0;
+    }
+
+    .btn{
+        transition: background-color .3s linear;
+    }
+
+    .btn:hover{
+        background-color: hsl(158, 36%, 24%);;
+    }
+    
+}
